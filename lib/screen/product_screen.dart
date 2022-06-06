@@ -3,7 +3,7 @@ import 'package:fruit_app_flutter/model/list_item.dart';
 
 class ProductScreen extends StatelessWidget {
   final ListItem item;
-  ProductScreen({required this.item});
+  const ProductScreen({required this.item});
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -122,7 +122,7 @@ class ProductScreen extends StatelessWidget {
                             width: 120.0,
                             decoration: const BoxDecoration(
                                 color: Colors.white,
-                                borderRadius: const BorderRadius.only(
+                                borderRadius: BorderRadius.only(
                                     topLeft: Radius.circular(20.0))),
                             child: Center(
                               child: Text(
